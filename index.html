@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>다운이의 메이크업</title>
+
+	<style>
+
+		.text{font-size: 1.4em; line-height: 1.7;  width: 500px; font-family: 'Roboto Mono', monospace;
+
+		}
+
+ 
+		body{position: absolute; left: 25% }
+		h1{font-family: 'Oswald', sans-serif; font-size: 33px;}
+
+		#t1{position: absolute; left: 700px; top: 950px; text-align: left; }
+
+		#t2{position: absolute; left: 50px; top: 1400px;}
+
+		#t3{position: absolute; left: 700px; top: 1950px;}
+
+		#t4{position: absolute; left: 50px; top: 2500px;}
+
+		#intro{width: 1200px; height: 150px; text-align: center;}
+
+		#img3{position: absolute; left: 700px; top: 1400px;}
+
+		#img4{position: absolute; left: 50px; top: 1950px;}
+
+		#img5{position: absolute; left: 700px; top: 2500px;}
+
+ 
+
+			@keyframes aa{
+
+			from{top: 500px; opacity: 0;}
+
+			to{top: 400px; opacity: 1;}
+
+		}
+
+ 
+
+			@keyframes ab{
+
+			from{top: 1000px; opacity: 0;}
+
+			to{top: 900px; opacity: 1;}
+
+		}
+
+		@keyframes cd{
+
+			from{top: 1500px; opacity: 0;}
+
+			to{top: 1400px; opacity: 1;}
+
+		}
+
+		@keyframes ef{
+
+			from{top: 2100px; opacity: 0;}
+
+			to{top: 1900px; opacity: 1;}
+
+		}
+
+		@keyframes gh{
+
+			from{top: 2600px; opacity: 0;}
+
+			to{top: 2500px; opacity: 1;}
+
+		}
+
+ 
+
+	</style>
+
+</head>
+
+<body>
+
+	<section class="blue" id="a">
+
+		<img src="me.jpeg" style="width: 1000px;" id="img1">
+
+	</section>
+
+	<section>
+
+	<div id="intro">
+
+		<br><br>
+
+		<h1>단점을 보완하고, 장점을 부각 시키는 다운이의 데일리 메이크업을 알아보기</h1>
+
+ 
+
+	</div>
+
+</section>
+
+	<section class="green"id="b">
+
+		<img src="hair.jpeg" style="width: 600px;" id="img2">
+
+		<div id="t1" class="text">
+
+			<h1>Hair Design</h1>
+
+			애쉬브라운 염색<br>
+
+			뿌리 볼륨을 줘서 머리 숱이 풍성해 보이도록 한다.<br>
+
+			앞머리와 옆머리가 자연스럽게 이어지는 것이 가장 중요해야되는 부분<br>
+
+			c컬펌이 풀린 부분은 안쪽으로도 넣어주고, 바깥으로도 뻗치게 해 자연스러운 느낌을 준다.<br>
+
+		</div>
+
+	</section>
+
+	<section class="red" id="c">
+
+		<img src="eye.jpeg" style="width: 600px;"id="img3">
+
+		<div id="t2" class="text">
+
+			<h1>Eyes Make-up</h1>
+
+			캐치아이 브라운 캣 - 브라운 렌즈<br>
+
+			대체로 핑크빛 도는 섀도우와 펄감이 많은 섀도우를 섞어 사용한다.<br>
+
+			아이라인은 점막을 다 채우고 살짝 위로 올라가게 그린다.<br>
+
+			마스카라는 컬링을 살려 위로 올라가게 잘 고정시켜준다.<br>
+
+		</div>
+
+	</section>
+
+	<section class="green" id="d">
+
+		<img src="lip.jpeg" style="width: 600px;"id="img4">
+
+		<div id="t3" class="text">
+
+			<h1>Lip Make-up</h1>
+
+			건조하지 않게 립밤을 꼼꼼히 발라준다<br>
+
+			누디한 색의 제품을 전체적으로 깔아준다.<br>
+
+			매트한 타입의 핑크빛 도는 틴트를 가운데 중심으로 바른다.<br>
+
+		</div>
+
+	</section>
+
+	<section class="red" id="e">
+
+		<img src="blur.jpeg" style="width: 600px;"id="img5">
+
+		<div id="t4" class="text">
+
+			<h1>Skin Make-up</h1>
+
+			21호 파운데이션을 바른다.<br>
+
+			컨실러로 잡티나 다크서클을 가려준다.<br>
+
+			쉐이딩은 자연스럽게 턱과 광대 위주로 해준다.<br>
+
+			블러셔는 입술색과 맞춰 핑크빛 도는 가루타입제품으로 사선을 그려 바른다.<br>
+
+		</div>
+
+	</section>
+
+	<div id="monitor"></div>
+
+ 
+
+	<script type="text/javascript">
+
+		window.onscroll = function(){
+
+			var t = document.documentElement.scrollTop + document.body.scrollTop;
+
+			monitor.innerHTML = t. toFixed(1);
+
+ 
+
+			
+
+			if(t>250){intro.style.animation = "aa 2s forwards";}
+
+			else{ intro.style.animation = "";}
+
+ 
+
+			if(t>500){img2.style.animation = "ab 2s forwards";}
+
+			else{ img2.style.animation = "";}
+
+			if(t>600){t1.style.animation = "ab 2s forwards";}
+
+			else{ t1.style.animation = "";}
+
+ 
+
+			if(t>900){img3.style.animation = "cd 2s forwards";}
+
+			else{ img3.style.animation = "";}
+
+			if(t>1000){t2.style.animation = "cd 2s forwards";}
+
+			else{ t2.style.animation = "";}
+
+ 
+
+			if(t>1400){t3.style.animation = "ef 2s forwards";}
+
+			else{ t3.style.animation = "";}
+
+			if(t>1500){img4.style.animation = "ef 2s forwards";}
+
+			else{ img4.style.animation = "";}
+
+ 
+
+			if(t>1780){t4.style.animation = "gh 2s forwards";}
+
+			else{ t4.style.animation = "";}
+
+			if(t>1850){img5.style.animation = "gh 2s forwards";}
+
+			else{ img5.style.animation = "";}
+
+ 
+
+		}
+
+	</script>
+
+</body>
+
+</html>
